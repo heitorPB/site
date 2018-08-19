@@ -62,6 +62,5 @@ If you want to add a picture of you, you simply need to add an image in the fold
 The image should have the same name as your markdown file in `_people` (e.g jon_tennant.md -> jon_tennant.jpg).
 
 # License
-The code for this site is covered by the MIT license: [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/OpenScienceMOOC/site/blob/master/LICENSE)   
 
 Website content license: [![conten license](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)   
