@@ -2,6 +2,9 @@
 # Rakefile
 # ---------------------------------------
 
+# inport module
+require "benchmark"
+require 'sassc'
 
 # Help
 # 
@@ -26,7 +29,6 @@ task :default => ["help"]
 # rake install:global -> Install gems' dependencies system-wide
 # rake install:local  -> Install gems' dependencies in vendor/bundle directory"
 namespace 'install' do
-  
 
   # Install all gems globally (default)
   task :global do
@@ -69,4 +71,64 @@ end
 desc "Run Jekyll in production mode"
 task serve: ["serve:prod"]
 # END serve
+
+# Sass
+#
+# rake sass
+# rake sass:watch
+namespace 'sass' do
+
+  desc "Compile Sass files"
+  task :compile do
+    puts "Sass"
+    puts "Compiling..."
+    time = Benchmark.realtime { 
+      sass_dir = File.dirname(__FILE__) + "/assets/scss/foundation/"
+      sass_input = File.read('./assets/scss/app.scss')
+      sass_engine = SassC::Engine.new(
+        sass_input,
+        {
+          :load_paths     => [sass_dir],
+          :style          => :compressed,
+          :cache          => true,
+          :cache_location => './.sass-cache',
+          :syntax         => :scss,     
+        }
+      )
+      sass_output = sass_engine.render
+      File.open("assets/css/app.min.css", 'w') { |file| file.write(sass_output) }
+    }
+    puts "             done in #{time.round(4)} seconds."
+  end
+
+  task :watch do
+    puts "Sass"
+    puts "Watching..."
+    time = Benchmark.realtime { 
+      sass_dir = File.dirname(__FILE__) + "/assets/scss/foundation/"
+      sass_input = File.read('./assets/scss/app.scss')
+      sass_engine = SassC::Engine.new(
+        sass_input,
+        {
+          :always_update  => true,
+          :always_check   => true,
+          :load_paths     => [sass_dir],
+          :style          => :compressed,
+          :cache          => true,
+          :cache_location => './.sass-cache',
+          :syntax         => :scss,     
+        }
+      )
+      sass_output = sass_engine.render
+      File.open("assets/css/app.min.css", 'w') { |file| file.write(sass_output) }
+    }
+    puts "             done in #{time.round(4)} seconds."
+  end
+
+end
+
+# Bug: default task doesn't seems to load sass' path...
+desc "Compile Sass files"
+task sass: ["sass:compile"]
+# END sass
 

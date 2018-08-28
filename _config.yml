@@ -45,15 +45,12 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-sass:
-  sass_dir: "assets/_scss"
-  style: compressed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
   - .bundle/
+  - scss/
   - vendor/
   - .gitignore
   - CODE_OF_CONDUCT.md

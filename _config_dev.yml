@@ -1,6 +1,0 @@
-# Developement environment settings
-url: ""
-baseurl: ""
-
-sass:
-  style: full
