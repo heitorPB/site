@@ -24,6 +24,9 @@ gem "rake", "~> 12.3.1"
 # SassC 
 gem "sassc", "~> 1.12.1"
 
+# Use SassC in Jekyll instead of Sass-ruby
+gem "jekyll-sass-converter", :git => "https://github.com/searls/jekyll-sassc-converter.git"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

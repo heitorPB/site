@@ -1,3 +1,6 @@
+---
+---
+
 // -----------------------------------------
 // This is the main SCSS file
 // -----------------------------------------
@@ -5,14 +8,13 @@
 // -----------------------------------------
 // import files
 // -----------------------------------------
-@import 'foundation';
-//@import 'foundation/foundation';
+@import 'foundation/foundation';
 
 // -----------------------------------------
 // Global styles
 // -----------------------------------------
 @include foundation-global-styles;
-@include foundation-forms;
+//@include foundation-forms;
 @include foundation-typography;
 
 // -----------------------------------------

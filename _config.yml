@@ -45,12 +45,21 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Sass settings
+sass:
+  style: compressed
+
+# Custom plugins and symbolic links
+#
+#   false = allow
+#   true  = disallow
+safe: true
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
   - .bundle/
-  - scss/
   - vendor/
   - .gitignore
   - CODE_OF_CONDUCT.md

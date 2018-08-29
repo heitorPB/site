@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/searls/jekyll-sassc-converter.git
+  revision: 67fe1bd55dd898afe5457802ef1a11cd227d6d5d
+  specs:
+    jekyll-sass-converter (1.5.2)
+      sassc (~> 1.12)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,8 +37,6 @@ GEM
     jekyll-feed (0.10.0)
       jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
-    jekyll-sass-converter (1.5.2)
-      sass (~> 3.4)
     jekyll-seo-tag (2.5.0)
       jekyll (~> 3.3)
     jekyll-sitemap (1.2.0)
@@ -71,6 +76,7 @@ DEPENDENCIES
   jekyll (~> 3.7.3)
   jekyll-feed (~> 0.9)
   jekyll-paginate (~> 1.1)
+  jekyll-sass-converter!
   jekyll-seo-tag (~> 2.1)
   jekyll-sitemap (~> 1.2)
   rake (~> 12.3.1)
@@ -78,4 +84,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.16.3
+   1.16.4
