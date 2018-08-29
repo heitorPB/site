@@ -4,15 +4,15 @@ Welcome message here.
 
 ## Table of Contents
 
-0. [Before you contribute](#before-you-contribute)
-0. [How to contribute](#how-to-contribute)
-0. [Adding content](#adding-content)
-  0. [How to add a person to be listed/rendered on the website](#how-to-add-a-person)
-  0. [Altering the module content](#altering-the-module-content)
-0. [Help with the development](#help-with-the-development)
-  0. [Setting up your environment](#setting-up-your-environment)
-  0. [Style guide](#style-guide)
-0. [Report issues/bugs](#report-bugs)
+1. [Before you contribute](#before-you-contribute)
+1. [How to contribute](#how-to-contribute)
+1. [Adding content](#adding-content)
+   1. [How to add a person to be listed/rendered on the website](#how-to-add-a-person)
+   1. [Altering the module content](#altering-the-module-content)
+1. [Help with the development](#help-with-the-development)
+   1. [Setting up your environment](#setting-up-your-environment)
+   1. [Style guide](#style-guide)
+1. [Report issues/bugs](#report-bugs)
 
 ## Before you contribute
 
@@ -73,8 +73,8 @@ My fancy bio in [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown
 ```
 
 - team
-  There's two possible values: steering_committee or production.
 
+  There's two possible values: steering_committee or production.
 
 #### Altering the module content
 
@@ -95,15 +95,18 @@ weight: 1
 ```
 
 - title
-  main
-  : Any text. It will be displayed in regular font size
-
-  extra
-  : Any text. It will be displayed in blod font size
+  - main
+  
+    Any text. It will be displayed in regular font size
+  - extra
+  
+    Any text. It will be displayed in blod font size
 - module
-  color
-  : Here's the possible value: name the colors
+  - color
+  
+    Here's the possible value: name the colors
 - weight
+
   A digit. It represent the order in each the module will be displayed. Lower
   digits are displayed first.
 
@@ -142,5 +145,5 @@ TODO
 ## Contribution review process
 
 <!-- footnote -->
-[jekyll-install-guide][https://jekyllrb.com/docs/installation/]
-[open-an-issue][https://github.com/OpenScienceMOOC/site/issues]
+[jekyll-install-guide]: https://jekyllrb.com/docs/installation/
+[open-an-issue]: https://github.com/OpenScienceMOOC/site/issues
