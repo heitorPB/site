@@ -17,15 +17,16 @@ our [contributing guide][contribute].
 ## License
 
 Unless otherwise stated, the source code of this website is under the 
-[Affero General Public License 3][agplv3]
-and the content is under the [Creative Commons Attribution-ShareAlike 4.0 International][cc].
+[MIT License][mit]
+and the content is under the 
+[Creative Commons Attribution-ShareAlike 4.0 International][cc].
 
 ---
 <!-- Reference are in alphabetical order -->
-[agplv3]:     LICENSE
 [cc]:         https://creativecommons.org/licenses/by-sa/4.0/
 [coc]:        CODE_OF_CONDUCT.md
 [contribute]: CONTRIBUTING.md
+[mit]:        LICENSE
 [slack]:      https://openmooc-ers-slackin.herokuapp.com/ 
 [twitter]:    https://twitter.com/OpenScienceMOOC
 [website]:    https://opensciencemooc.github.io/site
