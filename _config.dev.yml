@@ -6,7 +6,7 @@ baseurl: ""
 
 # Sass settings
 sass:
-  style: full
+  style: expanded
 
 # Custom plugins and symbolic links
 #
