@@ -1,0 +1,118 @@
+---
+layout: page
+title: People
+---
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x grid-margin-y align-center">
+    <div class="cell shrink text-center">
+      <h1 class="h3 font-bold separator-center-colored">
+          {{ page.title }}
+      </h1>
+    </div>
+  </div>
+  <div class="grid-x grid-margin-x grid-margin-y grid-padding-y align-center">
+    <div class="cell text-center">
+      <h2 class="h5 font-bold">
+        Steering Committee
+      </h2>
+    </div>
+  </div>
+  <div class="grid-x grid-margin-x grid-padding-x grid-margin-y grid-padding-y align-stretch">
+    {% assign people = site.people | where: "type", "lead" %}
+    {% for person in people %}
+    <div class="cell text-center small-12 medium-6 large-4">
+      <article>    
+        <header>
+          <!-- person avatar -->
+          {% assign avatars = site.static_files | where: "avatar", true %}
+          {% assign person_basename = person.path | remove: "_people/" | remove: ".md"  %}
+          {% for avatar in avatars %}
+            {% if avatar.basename == person_basename %}
+                  <img src="{{ avatar.path | relative_url }}" 
+                       alt="Picture of {{ person.name }}"
+                       class="rounded shadow"
+                       width="150">
+            {% endif %}
+          {% endfor %}
+          <!-- person name, role and location -->
+          <h3 class="h4"><a href="{{ person.url | relative_url }}">{{ person.name }}</a></h3>
+        </header>
+        <p>
+          {{ person.role }}<br>
+          {{ person.location }}<br>
+        </p>
+        <ul class="menu">
+        <!-- person contact -->
+        {% for contact in person.contact %}
+          {% for network in site.data.networks %}
+            <!-- contact[0] = key, contact[1] = value -->
+            {% if contact[0] == network.name %}
+            <li>
+              <a href="{{ network.url }}{{ contact[1] }}">
+                <i class="h4 fa fa-{{ network.name }}" aria-hidde="true"></i>
+                <span class="show-for-sr">{{ network.name }}</span>
+              </a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        </ul>
+      </article>
+    </div>
+    {% endfor %}    
+  </div>
+  
+  <div class="grid-x grid-margin-x grid-margin-y grid-padding-y align-center">
+    <div class="cell text-center">
+      <h2 class="h5 font-bold">
+        Production team
+      </h2>
+    </div>
+  </div>
+  <div class="grid-x grid-margin-x grid-padding-x grid-margin-y grid-padding-y align-stretch">
+    {% assign people = site.people | where: "type", "production" %}
+    {% for person in people %}
+    <div class="cell text-center small-12 medium-6 large-4">
+      <article>    
+        <header>
+          <!-- person avatar -->
+          {% assign avatars = site.static_files | where: "avatar", true %}
+          {% assign person_basename = person.path | remove: "_people/" | remove: ".md"  %}
+          {% for avatar in avatars %}
+            {% if avatar.basename == person_basename %}
+                  <img src="{{ avatar.path | relative_url }}" 
+                       alt="Picture of {{ person.name }}"
+                       class="rounded shadow"
+                       width="150">
+            {% endif %}
+          {% endfor %}
+          <!-- person name, role and location -->
+          <h2 class="h4"><a href="{{ person.url | relative_url }}">{{ person.name }}</a></h2>
+        </header>
+        <p>
+          {{ person.role }}<br>
+          {{ person.location }}<br>
+        </p>
+        <ul class="menu">
+        <!-- person contact -->
+        {% for contact in person.contact %}
+          {% for network in site.data.networks %}
+            <!-- contact[0] = key, contact[1] = value -->
+            {% if contact[0] == network.name %}
+            <li>
+              <a href="{{ network.url }}{{ contact[1] }}">
+                <i class="h4 fa fa-{{ network.name }}" aria-hidde="true"></i>
+                <span class="show-for-sr">{{ network.name }}</span>
+              </a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+        </ul>
+      </article>
+    </div>
+    {% endfor %}    
+  </div>
+</div>
+
