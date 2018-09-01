@@ -1,0 +1,12 @@
+<div class="top-bar stacked-for-medium">
+  <div class="top-bar-left">
+      <a class="menu-text font-bold">OpenScienceMOOC</a>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      {% for item in site.data.menus.main %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

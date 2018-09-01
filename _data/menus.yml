@@ -1,0 +1,14 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Blog"
+    url: blog
+  - title: "Modules"
+    url: modules
+  - title: "People"
+    url: people
+  - title: "About"
+    url: about
+  - title: "Contact"
+    url: contact
+
