@@ -1,0 +1,72 @@
+.line-heading {
+  border-bottom: solid 5px;
+  border-image: linear-gradient(to right, #cb3c5e 45%, #f29375 45%, #f29375 80%, #3ab585 80%) 3;
+  width: 200px;
+}
+
+.separator-center-colored {
+  @include separator(
+    $align: center, 
+    $height: 5px, 
+    $width: 200px, 
+    $background: null,
+    $background-image: linear-gradient(to right, #cb3c5e 45%, #f29375 45%, #f29375 80%, #3ab585 80%) 3,
+    $top: 5px
+  );
+}
+
+// Util
+
+.bg {
+  &--brightred {
+    background-color: $brightred !important;
+  }
+  &--cyan {
+    background-color: $cyan !important;
+  }
+  &--darkblue {
+    background-color: $darkblue !important;
+  }
+  &--darkcyan {
+    background-color: $darkcyan !important;
+  }
+  &--red {
+    background-color: $red !important;
+  }
+  &--lightred {
+    background-color: $lightred !important;
+  }
+  &--magenta {
+    background-color: $magenta !important;
+  }
+  &--yellow {
+    background-color: $yellow !important;
+  }
+}
+
+.hollow.bg--brightred,
+.hollow.bg--cyan,
+.hollow.bg--darkblue,
+.hollow.bg--darkcyan,
+.hollow.bg--red,
+.hollow.bg--lightred,
+.hollow.bg--magenta,
+.hollow.bg--yellow {
+  color: $white !important;
+  border: solid 2px $white !important;
+  font-weight: bold;
+}
+
+.fg {
+  &--white {
+    color: $white !important;
+  }
+}
+
+.border--rounded-1p {
+  border-radius: 1%;
+}
+.border--rounded-50p {
+  border-radius: 50%;
+}
+

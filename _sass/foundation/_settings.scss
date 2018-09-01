@@ -75,21 +75,29 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+$magenta: #97539e;
+$cyan: #3ab585;
+$yellow: #b58f23;
+$lightred: #d17d66;
+$red: #cb3c5e;
+$brightred: #d94043;
+$darkblue: #5962a6;
+$darkcyan: #1889ab;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$black: #000000;
+$white: #ffffff;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, 'Liberation Sans', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 5px;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -130,7 +138,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial, 'Liberation Sans', sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -325,9 +333,9 @@ $callout-link-tint: 30%;
 // 14. Card
 // --------
 
-$card-background: $white;
-$card-font-color: $body-font-color;
-$card-divider-background: $light-gray;
+$card-background: inherit;
+$card-font-color: inherit;
+$card-divider-background: inherit;
 $card-border: 1px solid $light-gray;
 $card-shadow: none;
 $card-border-radius: $global-radius;
