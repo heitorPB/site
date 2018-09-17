@@ -1,14 +1,13 @@
 main:
-  - title: "Home"
-    url: /
-  - title: "Blog"
-    url: blog
-  - title: "Modules"
-    url: modules
-  - title: "People"
-    url: people
-  - title: "About"
-    url: about
-  - title: "Contact"
-    url: contact
+- title:  "Home"
+  url:    "/"
+- title:  "Modules"
+  url:    "/modules"
+- title:  "People"
+  url:    "/people"
+- title:  "About"
+  url:    "#"
+  submenu:
+  - title:  "Mission"
+    url:    "/mission"
 
