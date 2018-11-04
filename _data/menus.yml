@@ -1,13 +1,36 @@
+# Menus 
+#
+# How to create a menu
+#
+# your_menu_name:
+# - title:  "your page title
+#   url:    "/page-link"
+# - title:  "an other page title"
+#   url:    "/an-other-page-link"
+#   submenu:
+#   - title:  "title for the dropdown menu item"
+#     url:    "/item-link"
+
 main:
 - title:  "Home"
   url:    "/"
-- title:  "Modules"
-  url:    "/modules"
-- title:  "People"
-  url:    "/people"
-- title:  "About"
-  url:    "#"
+- title:  "Blog"
+  url:    "/blog"
+- title:  "Courses"
+  url:    "/courses"
+- title:  "Get Involved"
+  url:    "/get-involved"
+- title:  "About Us"
+  url:    "/about-us"
   submenu:
-  - title:  "Mission"
-    url:    "/mission"
+  - title:  "Our Mission"
+    url:    "/about-us/our-mission"
+  - title:  "Our Steering Committee"
+    url:    "/about-us/steering-commmitte"
+  - title:  "Our Team"
+    url:    "/our-team"
+  - title:  "Our Partners"
+    url:    "/our-partners"
+- title:  "Contact"
+  url:    "/contact"
 
