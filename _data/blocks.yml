@@ -1,0 +1,52 @@
+# Blocks
+#
+# Blocks are used to add multiple section on a page. They should only be used
+# for short section of content (500 characters maximum). 
+#
+# page-name:
+#   blocks-name:
+#   - title:  "block title"
+#     description: "block text"
+#     ...
+#   blocks-name:
+#   - title:  "block title"
+#     description: "block text"
+#     ...
+#
+# TODO:
+#   - add link for special symbol like >- >+
+#   - investigate a better way to handle longer blocks of content. Maybe a
+#     collections?
+
+index:
+  cards:
+  - title: "Our Courses"
+    description: >+ 
+      "Morbi finibus, nisi a ultricies sollicitudin, elit felis tincidunt justo,
+      a rutrum eros purus rhoncus urna. Nam sed diam ac ipsum suscipit placerat 
+      in sit amet leo. Donec odio lectus, varius eu porta ut, sodales sed dui. 
+      Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris metus 
+      tellus, blandit et massa eget, dignissim bibendum libero. Phasellus nec 
+      condimentum massa. Cras nec ipsum pulvinar, egestas orci vitae, ultricies 
+      diam. Aliquam iaculis elementum neque sit amet massa nunc."
+    icon: ""
+  - title: "Get Involved"
+    description: >+ 
+      "Morbi finibus, nisi a ultricies sollicitudin, elit felis tincidunt justo,
+      a rutrum eros purus rhoncus urna. Nam sed diam ac ipsum suscipit placerat 
+      in sit amet leo. Donec odio lectus, varius eu porta ut, sodales sed dui. 
+      Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris metus 
+      tellus, blandit et massa eget, dignissim bibendum libero. Phasellus nec 
+      condimentum massa. Cras nec ipsum pulvinar, egestas orci vitae, ultricies 
+      diam. Aliquam iaculis elementum neque sit amet massa nunc."
+    icon: ""
+  - title: "Become a Partners"
+    description: >+ 
+      "Morbi finibus, nisi a ultricies sollicitudin, elit felis tincidunt justo,
+      a rutrum eros purus rhoncus urna. Nam sed diam ac ipsum suscipit placerat 
+      in sit amet leo. Donec odio lectus, varius eu porta ut, sodales sed dui. 
+      Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris metus 
+      tellus, blandit et massa eget, dignissim bibendum libero. Phasellus nec 
+      condimentum massa. Cras nec ipsum pulvinar, egestas orci vitae, ultricies 
+      diam. Aliquam iaculis elementum neque sit amet massa nunc."
+    icon: ""

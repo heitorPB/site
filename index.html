@@ -1,5 +1,37 @@
 ---
-layout: page
+layout: page-home
 ---
 
-{% include hero.html %}
+<div class="grid-container">
+  <h2>Describe the section in one line</h2>
+  <div class="grid-x grid-padding-x small-up-1 medium-up-3">
+    {% for card in site.data.blocks.index.cards %}
+    <div class="cell">
+      <div class="card text-center">
+        <div class="card-section">
+          <img src="{{ card.icon }}">
+        </div>
+        <div class="card-section">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+  <h2>Latest news</h2>
+  <div class="grid-x grid-padding-x small-up-1 medium-up-3">
+    {% for post in site.posts limit:3 %}
+    <div class="cell">
+      <div class="card">
+        <img src="">
+        <div class="card-section">
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
