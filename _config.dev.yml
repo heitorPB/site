@@ -1,4 +1,5 @@
 # this settings override those in _config.yml
+environment: "dev"
 
 # General settings
 url: ""

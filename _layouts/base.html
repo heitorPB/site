@@ -7,6 +7,10 @@
   <script src="{{ "assets/js/jquery.slim.min.js" | relative_url }}"></script>
   <script src="{{ "assets/js/foundation.min.js" | relative_url }}"></script>
   <script src="{{ "assets/js/what-input.min.js" | relative_url }}"></script>
+  {% if site.environment == "dev" %}
+    <script src="{{ "assets/js/holder.min.js" | relative_url }}"></script>
+    <script src="{{ "assets/js/tota11y.min.js" | relative_url }}"></script>
+  {% endif %}
   <script>
     $(document).foundation(); 
   </script>
