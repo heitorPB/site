@@ -1,0 +1,15 @@
+---
+layout: page
+title: Team
+---
+<!--
+  add a username for each member and replace member.name to member.username in
+  image's URL.
+-->
+{% for members in site.data.team %}
+{% assign member = members[1] %}
+    <img src="{{ "/assets/img/team/" | append: member.name | relative_url }}" 
+         alt="Picture of {{ member.name }}">
+    {{ member.name }}
+{% endfor %}
+
