@@ -1,4 +1,3 @@
----
 title: Stephan Druskat
 name: Stephan Druskat
 role: Software Citationist
@@ -11,8 +10,9 @@ contact:
   twitter: stdruskat
   website: sdruskat.net
 type: production
----
-
-I am a [Research Software Engineer](https://rse.ac.uk/) working in linguistics and the digital humanities.
-In my research I work on research software sustainability, currently with a focus on
-software citation.
+bio: |
+  I am a [Research Software Engineer](https://rse.ac.uk/) working in linguistics 
+  and the digital humanities.
+  
+  In my research I work on research software sustainability, currently with a 
+  focus on software citation.
