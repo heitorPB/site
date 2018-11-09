@@ -1,0 +1,18 @@
+---
+layout: page
+title: Steering Committee
+---
+
+{% assign avatars = site.static_files | where: "avatar", true %}
+{% for members in site.data.team %}
+  {% assign member = members[1] %}
+  {% if member.type == "lead" %}
+  {% for avatar in avatars %}
+      {% if avatar.path contains members[0] %}
+        <img src="{{ avatar.path | relative_url }}" alt="" width="32">
+      {% endif %}
+  {% endfor %}
+  {% endif %}
+  
+{% endfor %}
+

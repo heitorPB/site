@@ -35,7 +35,7 @@ defaults:
   # static files that have this front matter property.
   -
     scope:
-      path: "assets/img/people" 
+      path: "assets/img/team" 
     values:
       avatar: true
 
