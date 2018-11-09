@@ -1,4 +1,6 @@
-# ![Open Science MOOC](/assets/img/osmooc/mooc_logo.png "Open Science MOOC's logo")
+<img src="/assets/img/osmooc/mooc_logo.png" 
+     alt="Open Science MOOC logo"
+     width="256">
 
 Visit [our website][website] to learn more about the project.
 
