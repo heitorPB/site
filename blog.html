@@ -2,3 +2,30 @@
 layout: page-no-container
 title: Blog
 ---
+
+<div class="grid-container">
+  <div class="grid-x align-center">
+    <div class="cell medium-8">
+      {% for post in site.posts %}
+      <article class="blog-post">
+        <header>
+          <img src="holder.js/100px250">
+          <h2><a href="#">{{ post.title }}</a></h2>
+          <p>
+            {{ site.data.team[post.author].name }} 
+            on {{ post.date | date: "%d %b %Y" }}
+          </p>
+        </header>
+        <p>
+          praesent id metus massa, ut blandit odio. proin quis tortor orci. etiam 
+          at risus et justo dignissim congue. donec congue lacinia dui, a porttitor 
+          lectus condimentum laoreet. nunc eu ullamcorper orci. quisque eget odio 
+          ac lectus vestibulum faucibus eget in metus. in pellentesque faucibus 
+          vestibulum. nulla at nulla justo, eget luctus.
+        </p>
+      </article>
+      <hr>
+      {% endfor %} 
+      </div>
+  </div>
+</div>
