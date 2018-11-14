@@ -1,20 +1,3 @@
-.line-heading {
-  border-bottom: solid 5px;
-  border-image: linear-gradient(to right, #cb3c5e 45%, #f29375 45%, #f29375 80%, #3ab585 80%) 3;
-  width: 200px;
-}
-
-.separator-center-colored {
-  @include separator(
-    $align: center, 
-    $height: 5px, 
-    $width: 200px, 
-    $background: null,
-    $background-image: linear-gradient(to right, #cb3c5e 45%, #f29375 45%, #f29375 80%, #3ab585 80%) 3,
-    $top: 5px
-  );
-}
-
 // Util
 
 .bg {
