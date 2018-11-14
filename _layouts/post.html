@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+<header>
+  {% include header.html %}
+</header>
+
+<main> 
+  <article>
+    <header>
+      <img src="holder.js/100px450" alt="#">
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell medium-8 medium-offset-2">
+              <h1>{{ page.title }}</h1>
+              <p>
+                {{ site.data.team[page.author].name }} 
+                on {{ page.date | date: "%d %b %Y" }}
+              </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="cell medium-8 medium-offset-2">
+            {{ content }}  
+            <footer>
+              <p>about the author</p>
+            </footer>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer>
+  {% include footer.html %}  
+</footer>
