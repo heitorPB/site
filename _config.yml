@@ -25,8 +25,6 @@ paginate: 10
 collections:
   modules:
     output: true
-  people:
-    output: true
 
 defaults:
   # Set front matter values for people's image
