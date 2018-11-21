@@ -25,6 +25,9 @@ paginate: 10
 collections:
   modules:
     output: true
+  pages:
+    output: true
+    permalink: /:path
 
 defaults:
   # Set front matter values for people's image
