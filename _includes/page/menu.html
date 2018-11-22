@@ -9,7 +9,7 @@
   <li>
     <a href="{{ item.url }}">{{ item.title }}</a>
     {% if item.submenu %}
-      {% include menu.html menu=item.submenu vertical=true %}
+      {% include page/menu.html menu=item.submenu vertical=true %}
     {% endif %}
   </li>
   {% endfor %}
